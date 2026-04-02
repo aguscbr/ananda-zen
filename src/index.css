@@ -63,6 +63,12 @@ h6 {
   font-family: var(--font-display);
 }
 
+p, span {
+  font-family: var(--font-body);
+}
+
 button {
   border: none;
+  font-family: var(--font-display);
+  cursor: pointer;
 }

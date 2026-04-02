@@ -1,0 +1,95 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.hero__tag {
+  color: hsl(var(--zen-deep));
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 24px;
+}
+
+.hero__title {
+  font-family: var(--font-display);
+  color: hsl(var(--foreground));
+  font-size: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.125;
+}
+
+.hero__title-highlight {
+  font-family: var(--font-display);
+  display: block;
+  color: hsl(var(--zen-deep));
+}
+
+.hero__description {
+  font-size: 1.125rem;
+  color: hsl(var(--muted-foreground));
+  line-height: 1.75rem;
+  max-width: 28rem;
+  font-weight: 400;
+}
+
+.hero__actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+button {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  line-height: 1.25rem;
+  font-size: 0.875rem;
+  padding: 0.75rem 2rem;
+  
+  border-radius: 20px;
+}
+
+.hero__btn--primary {
+  background-color: hsl(var(--zen-deep));
+  color: hsl(var(--background));
+}
+
+.hero__btn--outline {
+  color: hsl(var(--zen-deep));
+  border: solid 2px hsl(var(--zen-deep));
+}
+
+.hero__btn--outline:hover {
+  background-color: hsl(var(--zen-deep));
+  color: hsl(var(--background));
+}
+
+.hero__image-container {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  box-shadow:
+    var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000),
+    var(--tw-shadow);
+}
+
+.hero__image-container img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 1.5rem;
+}
