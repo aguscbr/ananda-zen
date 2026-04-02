@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Nunito:wght@400;500;600;700;800&display=swap");
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 160 20% 18%;
+
+  --card: 153 30% 97%;
+  --card-foreground: 160 20% 18%;
+
+  --popover: 0 0% 100%;
+  --popover-foreground: 160 20% 18%;
+
+  --primary: 153 33% 76%;
+  --primary-foreground: 160 30% 15%;
+
+  --secondary: 153 25% 92%;
+  --secondary-foreground: 160 20% 25%;
+
+  --muted: 153 15% 95%;
+  --muted-foreground: 160 10% 45%;
+
+  --accent: 153 40% 85%;
+  --accent-foreground: 160 25% 20%;
+
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 210 40% 98%;
+
+  --border: 153 20% 90%;
+  --input: 153 20% 90%;
+  --ring: 153 33% 76%;
+
+  --radius: 1rem;
+
+  --zen-deep: 153 35% 45%;
+  --zen-light: 153 33% 92%;
+  --zen-warm: 40 60% 94%;
+
+  --font-display: "Nunito", sans-serif;
+  --font-body: "Quicksand", sans-serif;
+
+  --sidebar-background: 0 0% 98%;
+  --sidebar-foreground: 240 5.3% 26.1%;
+  --sidebar-primary: 240 5.9% 10%;
+  --sidebar-primary-foreground: 0 0% 98%;
+  --sidebar-accent: 240 4.8% 95.9%;
+  --sidebar-accent-foreground: 240 5.9% 10%;
+  --sidebar-border: 220 13% 91%;
+  --sidebar-ring: 217.2 91.2% 59.8%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-display);
+}
+
+button {
+  border: none;
+}
