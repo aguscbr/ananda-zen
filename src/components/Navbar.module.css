@@ -38,15 +38,18 @@
 }
 
 .header__mobile-nav {
+  position: absolute;
+  top: 60px;
+  left: 0;
+}
+
+.header__mobile-nav ul {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 1rem;
   padding: 1.5rem 0;
-  position: absolute;
-  top: 60px;
-  left: 0;
   background-color: hsl(var(--background));
   border-bottom: solid 1px hsl(var(--border));
   height: auto;
@@ -54,7 +57,7 @@
   list-style: none;
 }
 
-.header__mobile-nav li a {
+.header__mobile-nav ul li a {
   font-size: 1.125rem;
   line-height: 1.75rem;
   font-family: var(--font-body);
@@ -65,7 +68,7 @@
 }
 
 .header__mobile-nav li a:hover {
-    color: hsl(var(--zen-deep));
+  color: hsl(var(--zen-deep));
 }
 
 @media screen and (max-width: 768px) {
