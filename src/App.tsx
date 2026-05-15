@@ -1,4 +1,4 @@
-import { AboutSection, ClassesSection, HeroSection, Navbar } from "./components";
+import { AboutSection, BenefitsSection, ClassesSection, HeroSection, Navbar } from "./components";
 
 function App() {
   return (
@@ -8,6 +8,7 @@ function App() {
         <HeroSection />
         <AboutSection />
         <ClassesSection />
+        <BenefitsSection />
       </header>
     </>
   );
