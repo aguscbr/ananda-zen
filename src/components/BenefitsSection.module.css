@@ -1,0 +1,71 @@
+.benefitsSection {
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto 4rem;
+}
+
+.benefitsSection__label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  font-family: var(--font-body);
+  color: hsl(var(--zen-deep));
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.benefitsSection__title {
+  font-size: 3rem;
+  font-family: var(--font-display);
+  color: hsl(var(--foreground));
+  font-weight: 800;
+  line-height: 1.1;
+  margin: 0;
+  margin-bottom: 1.5rem;
+}
+
+.benefitsSection__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.benefitsSection__card {
+  display: flex;
+  align-items: center;
+  background-color: hsl(var(--card));
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  border: solid 1px hsl(var(--border));
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.benefitsSection__card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.benefitsSection__icon {
+  width: 48px;
+  height: 48px;
+  color: #4a9c6d;
+  margin-bottom: 1rem;
+}
+
+.benefitsSection__cardTitle {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: #1a1a1a;
+}
+
+.benefitsSection__cardText {
+  font-family: var(--font-body);
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
