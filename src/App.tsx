@@ -1,12 +1,15 @@
-import { HeroSection, Navbar } from "./components";
+import { AboutSection, HeroSection, Navbar } from "./components";
 
 function App() {
-  return <>
-    <header>
-      <Navbar />
-      <HeroSection />
-    </header>
-  </>;
+  return (
+    <>
+      <header>
+        <Navbar />
+        <HeroSection />
+        <AboutSection />
+      </header>
+    </>
+  );
 }
 
 export default App;

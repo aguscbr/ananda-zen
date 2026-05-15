@@ -50,3 +50,40 @@
 /* Navbar link active modifier */
 .navbar__link--active {
 }
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 1rem;
+  }
+
+  .navbar__title {
+    font-size: 1.25rem;
+  }
+
+  .navbar__list {
+    gap: 1rem;
+  }
+
+  .navbar__item {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 0 0.75rem;
+  }
+
+  .navbar__title {
+    font-size: 1.125rem;
+  }
+
+  .navbar__list {
+    gap: 0.75rem;
+  }
+
+  .navbar__item {
+    font-size: 0.75rem;
+  }
+}
