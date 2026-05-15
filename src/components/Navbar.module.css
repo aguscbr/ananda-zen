@@ -1,12 +1,16 @@
 /* Navbar block */
 .navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 4rem;
   height: 100%;
   padding: 0 2rem;
-  border: solid 1px hsl(var(--border))
+  border: solid 1px hsl(var(--border));
+  background-color: hsl(var(--background));
 }
 
 /* Navbar title element */
@@ -16,10 +20,6 @@
   font-family: var(--font-display);
   color: hsl(var(--zen-deep));
   font-weight: 700;
-}
-
-/* Navbar navigation element */
-.navbar__nav {
 }
 
 /* Navbar list element */
@@ -51,6 +51,7 @@
 
 /* Navbar link active modifier */
 .navbar__link--active {
+  color: hsl(var(--zen-deep));
 }
 
 /* Responsive design */
