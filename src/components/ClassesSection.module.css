@@ -185,3 +185,189 @@
     font-size: 1.125rem;
   }
 }
+
+/* Classes section block */
+.classes {
+  padding: 6rem 2rem;
+  background: hsl(var(--background));
+}
+
+/* Classes container element */
+.classes__container {
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto 4rem;
+}
+
+/* Classes badge element */
+.classes__badge {
+  font-size: 0.875rem;
+  font-weight: 600;
+  font-family: var(--font-body);
+  color: hsl(var(--zen-deep));
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+/* Classes title element */
+.classes__title {
+  font-size: 3rem;
+  font-family: var(--font-display);
+  color: hsl(var(--foreground));
+  font-weight: 800;
+  line-height: 1.1;
+  margin: 0;
+  margin-bottom: 1.5rem;
+}
+
+/* Classes description element */
+.classes__description {
+  font-size: 1.125rem;
+  font-family: var(--font-body);
+  color: hsl(var(--muted-foreground));
+  line-height: 1.625;
+  margin-bottom: 3rem;
+  max-width: 800px;
+}
+
+/* Classes cards container element */
+.classes__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+/* Classes card element */
+.classes__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  background: hsl(var(--card));
+  border: 1px solid hsl(var(--border));
+  border-radius: 1rem;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.classes__card:hover {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  transform: translateY(-4px);
+}
+
+/* Classes card icon element */
+.classes__cardIcon {
+  margin-bottom: 1rem;
+  width: 48px;
+  height: 48px;
+  align-self: center;
+  color: hsl(var(--zen-deep));
+}
+
+/* Classes card age element */
+.classes__cardAge {
+  font-size: 0.875rem;
+  font-weight: 600;
+  font-family: var(--font-body);
+  color: hsl(var(--zen-deep));
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+/* Classes card title element */
+.classes__cardTitle {
+  font-size: 1.5rem;
+  font-family: var(--font-display);
+  color: hsl(var(--foreground));
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+/* Classes card description element */
+.classes__cardDescription {
+  font-size: 1rem;
+  font-family: var(--font-body);
+  color: hsl(var(--muted-foreground));
+  line-height: 1.625;
+  margin: 0;
+  margin-bottom: 1.5rem;
+}
+
+/* Classes card schedule element */
+.classes__cardSchedule {
+  font-size: 0.95rem;
+  font-family: var(--font-body);
+  color: hsl(var(--foreground));
+  font-weight: 600;
+  display: block;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+  .classes__title {
+    font-size: 2.5rem;
+  }
+
+  .classes__cards {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .classes {
+    padding: 4rem 1rem;
+  }
+
+  .classes__title {
+    font-size: 2rem;
+  }
+
+  .classes__description {
+    font-size: 1rem;
+  }
+
+  .classes__cards {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .classes__card {
+    padding: 1.5rem;
+  }
+
+  .classes__cardTitle {
+    font-size: 1.25rem;
+  }
+
+  .classes__cardDescription {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .classes {
+    padding: 3rem 1rem;
+  }
+
+  .classes__title {
+    font-size: 1.75rem;
+  }
+
+  .classes__description {
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+  }
+
+  .classes__card {
+    padding: 1.25rem;
+  }
+
+  .classes__cardTitle {
+    font-size: 1.125rem;
+  }
+}
