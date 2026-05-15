@@ -5,6 +5,7 @@ import {
   HeroSection,
   Navbar,
   ContactSection,
+  Footer
 } from "./components";
 
 function App() {
@@ -18,6 +19,9 @@ function App() {
         <BenefitsSection />
         <ContactSection />
       </header>
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 }
