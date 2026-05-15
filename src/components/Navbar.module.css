@@ -1,0 +1,52 @@
+/* Navbar block */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4rem;
+  height: 100%;
+  padding: 0 2rem;
+  border: solid 1px hsl(var(--border))
+}
+
+/* Navbar title element */
+.navbar__title {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-family: var(--font-display);
+  color: hsl(var(--zen-deep));
+  font-weight: 700;
+}
+
+/* Navbar navigation element */
+.navbar__nav {
+}
+
+/* Navbar list element */
+.navbar__list {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+/* Navbar item element */
+.navbar__item {
+    font-size: .875rem;
+    line-height: 1.25rem;
+    font-family: var(--font-body);
+    color: hsl(var(--foreground) / .7);
+    font-weight: 600;
+}
+
+
+/* Navbar link element */
+.navbar__link {
+  text-decoration: none;
+}
+
+.navbar__link:hover {
+}
+
+/* Navbar link active modifier */
+.navbar__link--active {
+}
