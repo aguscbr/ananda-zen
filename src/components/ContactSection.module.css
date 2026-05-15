@@ -103,15 +103,22 @@
 }
 
 .contactSection__button {
-  background-color: hsl(var(--primary));
-  color: hsl(var(--primary-foreground));
+  background-color: hsl(var(--zen-deep));
+  color: hsl(var(--zen-light));
   padding: 0.75rem 1.5rem;
-  border-radius: 0.75rem;
   font-family: var(--font-body);
   font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   border: none;
   cursor: pointer;
-  transition: opacity 0.2s ease;
+  transition: all 0.3s ease;
+  border-radius: calc(var(--radius) - 2px);
+  box-shadow:
+    var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000),
+    var(--tw-shadow);
+  border: none;
+  cursor: pointer;
 }
 
 .contactSection__button:hover {

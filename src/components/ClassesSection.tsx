@@ -1,4 +1,5 @@
 import { Baby, GraduationCap, School } from "lucide-react";
+import { motion } from "framer-motion";
 import styles from "./ClassesSection.module.css";
 
 const classes = [
@@ -31,24 +32,65 @@ const classes = [
 export const ClassesSection = () => {
   return (
     <section className={styles.classes} id="classes">
-      <div className={styles.classes__container}>
-        <span className={styles.classes__badge}>CLASES</span>
-        <h2 className={styles.classes__title}>Un espacio para cada edad</h2>
-        <p className={styles.classes__description}>
+      <motion.div
+        className={styles.classes__container}
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+      >
+        <motion.span
+          className={styles.classes__badge}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.1 }}
+        >
+          CLASES
+        </motion.span>
+        <motion.h2
+          className={styles.classes__title}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+        >
+          Un espacio para cada edad
+        </motion.h2>
+        <motion.p
+          className={styles.classes__description}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+        >
           Programas diseñados específicamente para cada etapa del desarrollo.
-        </p>
-        <div className={styles.classes__cards}>
-          {classes.map(({ icon, age, title, description, schedule }) => (
-            <div className={styles.classes__card}>
+        </motion.p>
+        <motion.div
+          className={styles.classes__cards}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+        >
+          {classes.map(({ icon, age, title, description, schedule }, index) => (
+            <motion.div
+              key={title}
+              className={styles.classes__card}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.5 + index * 0.1 }}
+            >
               <div className={styles.classes__cardIcon}>{icon}</div>
               <span className={styles.classes__cardAge}>{age}</span>
               <h3 className={styles.classes__cardTitle}>{title}</h3>
               <p className={styles.classes__cardDescription}>{description}</p>
               <span className={styles.classes__cardSchedule}>🗓️ {schedule}</span>
-            </div>
+            </motion.div>
           ))}
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </section>
   );
 };
