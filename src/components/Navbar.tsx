@@ -3,23 +3,23 @@ import styles from "./Navbar.module.css";
 const NAV_LINKS = [
   {
     label: "Inicio",
-    href: "/",
+    href: "#home",
   },
   {
     label: "Nosotros",
-    href: "/",
+    href: "#about",
   },
   {
     label: "Clases",
-    href: "/",
+    href: "#classes",
   },
   {
     label: "Beneficios",
-    href: "/",
+    href: "#benefits",
   },
   {
     label: "Contacto",
-    href: "/",
+    href: "#contact",
   },
 ];
 

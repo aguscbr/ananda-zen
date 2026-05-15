@@ -36,7 +36,7 @@ const benefits = [
 
 export const BenefitsSection = () => {
   return (
-    <section className={styles.benefitsSection}>
+    <section className={styles.benefitsSection} id="benefits">
       <span className={styles.benefitsSection__label}>BENEFICIOS</span>
       <h2 className={styles.benefitsSection__title}>
         ¿Por qué yoga para niños?

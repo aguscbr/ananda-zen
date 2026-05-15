@@ -42,9 +42,11 @@
 /* Navbar link element */
 .navbar__link {
   text-decoration: none;
+  color: hsl(var(--foreground) / .7);
 }
 
 .navbar__link:hover {
+  color: hsl(var(--zen-deep));
 }
 
 /* Navbar link active modifier */

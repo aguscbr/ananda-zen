@@ -30,7 +30,7 @@ const classes = [
 
 export const ClassesSection = () => {
   return (
-    <section className={styles.classes}>
+    <section className={styles.classes} id="classes">
       <div className={styles.classes__container}>
         <span className={styles.classes__badge}>CLASES</span>
         <h2 className={styles.classes__title}>Un espacio para cada edad</h2>

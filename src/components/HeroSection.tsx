@@ -2,7 +2,7 @@ import styles from "./HeroSection.module.css";
 
 export const HeroSection = () => {
   return (
-    <section className={styles.hero}>
+    <section className={styles.hero} id="home">
       <div className={styles.hero__container}>
         <div className={styles.hero__content}>
           <span className={styles.hero__badge}>

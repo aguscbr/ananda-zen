@@ -24,7 +24,7 @@ const values = [
 
 export const AboutSection = () => {
   return (
-    <section className={styles.about}>
+    <section className={styles.about} id="about">
       <div className={styles.about__container}>
         <span className={styles.about__badge}>NOSOTROS</span>
         <h2 className={styles.about__title}>Yoga con propósito</h2>
