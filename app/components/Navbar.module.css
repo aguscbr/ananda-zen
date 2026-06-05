@@ -1,0 +1,228 @@
+/* Navbar block */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4rem;
+  height: 100%;
+  padding: 0 2rem;
+  border: solid 1px hsl(var(--border));
+  background-color: hsl(var(--background));
+}
+
+/* Navbar title element */
+.navbar__title {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-family: var(--font-display);
+  color: hsl(var(--zen-deep));
+  font-weight: 700;
+}
+
+/* Navbar list element */
+.navbar__list {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+/* Navbar item element */
+.navbar__item {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-family: var(--font-body);
+  color: hsl(var(--foreground) / 0.7);
+  font-weight: 600;
+}
+
+/* Navbar link element */
+.navbar__link {
+  text-decoration: none;
+  color: hsl(var(--foreground) / 0.7);
+}
+
+.navbar__link:hover {
+  color: hsl(var(--zen-deep));
+}
+
+/* Navbar link active modifier */
+.navbar__link--active {
+  color: hsl(var(--zen-deep));
+}
+
+/* Tienda link — styled as a pill button */
+.navbar__linkStore {
+  display: inline-block;
+  text-decoration: none;
+  color: hsl(var(--zen-light));
+  background-color: hsl(var(--zen-deep));
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 0.375rem 1rem;
+  border-radius: 99px;
+  transition: opacity 0.2s ease;
+}
+
+.navbar__linkStore:hover {
+  opacity: 0.85;
+}
+
+/* Navbar menu button (mobile) */
+
+.navbar__menu {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  color: hsl(var(--foreground));
+}
+
+.navbar__menu:hover {
+  background-color: hsl(var(--muted) / 0.5);
+}
+
+.navbar__menu__open {
+  background-color: hsl(var(--muted) / 0.5);
+}
+
+.navbar__mobileNav {
+  display: none;
+  position: absolute;
+  top: calc(100%);
+  right: 0;
+  left: 0;
+  background-color: hsl(var(--background));
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-top: solid 1px hsl(var(--border));
+  box-shadow: 0 10px 40px -10px hsl(var(--foreground) / 0.15);
+  padding: 1.5rem;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+}
+
+.navbar__mobileNav__open {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.navbar__mobileNav .navbar__list {
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.navbar__mobileNav .navbar__item {
+  opacity: 0;
+  transform: translateX(20px);
+  transition: all 0.3s ease;
+}
+
+.navbar__mobileNav__open .navbar__item {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.navbar__mobileNav__open .navbar__item:nth-child(1) {
+  transition-delay: 0.05s;
+}
+
+.navbar__mobileNav__open .navbar__item:nth-child(2) {
+  transition-delay: 0.1s;
+}
+
+.navbar__mobileNav__open .navbar__item:nth-child(3) {
+  transition-delay: 0.15s;
+}
+
+.navbar__mobileNav__open .navbar__item:nth-child(4) {
+  transition-delay: 0.2s;
+}
+
+.navbar__mobileNav__open .navbar__item:nth-child(5) {
+  transition-delay: 0.25s;
+}
+
+.navbar__mobileNav .navbar__link {
+  display: block;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  font-size: 1rem;
+}
+
+.navbar__mobileNav .navbar__link:hover {
+  background-color: hsl(var(--muted) / 0.5);
+  color: hsl(var(--zen-deep));
+  transform: translateX(4px);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 1rem;
+  }
+
+  .navbar__title {
+    font-size: 1.25rem;
+  }
+
+  .navbar__list {
+    gap: 1rem;
+  }
+
+  .navbar__item {
+    font-size: 0.8rem;
+  }
+
+  .navbar__nav {
+    display: none;
+  }
+
+  .navbar__menu {
+    display: block;
+  }
+
+  .navbar__mobileNav {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 0 0.75rem;
+  }
+
+  .navbar__title {
+    font-size: 1.125rem;
+  }
+
+  .navbar__list {
+    gap: 0.75rem;
+  }
+
+  .navbar__item {
+    font-size: 0.75rem;
+  }
+
+  .navbar__nav {
+    display: none;
+  }
+
+  .navbar__menu {
+    display: block;
+  }
+
+  .navbar__mobileNav {
+    display: block;
+  }
+}

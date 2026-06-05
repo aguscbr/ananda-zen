@@ -1,0 +1,94 @@
+[
+  {
+    "slug": "remera-ananda-zen",
+    "name": "Remera Ananda Zen",
+    "category": "Indumentaria",
+    "price": 8500,
+    "description": "Remera unisex de algodón orgánico con el logo de Ananda Zen bordado en el pecho. Cómoda, fresca y pensada para acompañarte en la práctica y en el día a día.",
+    "details": [
+      "Talles: XS, S, M, L, XL",
+      "Color: verde sage",
+      "Material: algodón 100% orgánico",
+      "Lavado a mano o máquina en frío"
+    ],
+    "image": "https://acdn-us.mitiendanube.com/stores/944/335/products/yoga-2-azul-4504596efa4859722315885543382412-1024-1024.webp",
+    "whatsappText": "Hola! Me interesa la Remera Ananda Zen. ¿Me podés dar más información sobre disponibilidad y talles?"
+  },
+  {
+    "slug": "taza-zen",
+    "name": "Taza Zen",
+    "category": "Accesorios",
+    "price": 4200,
+    "description": "Taza de cerámica artesanal con el mantra de Ananda Zen. Ideal para tu té o infusión de antes de practicar. Cada taza es única, hecha a mano.",
+    "details": [
+      "Capacidad: 350 ml",
+      "Material: cerámica artesanal",
+      "Apta para microondas y lavavajillas",
+      "Color: blanco con detalles en verde"
+    ],
+    "image": "https://i.etsystatic.com/44802859/r/il/d20e5f/6243119678/il_570xN.6243119678_4edu.jpg",
+    "whatsappText": "Hola! Me interesa la Taza Zen. ¿Me podés contar más sobre el producto y envíos?"
+  },
+  {
+    "slug": "mat-yoga-infantil",
+    "name": "Mat de Yoga Infantil",
+    "category": "Equipamiento",
+    "price": 15000,
+    "description": "Mat antideslizante especialmente diseñado para chicos y chicas. Tamaño reducido, mayor agarre.",
+    "details": [
+      "Medidas: 150 x 60 cm",
+      "Grosor: 4 mm",
+      "Material: TPE ecológico, libre de PVC",
+      "Incluye bolsa de transporte",
+      "Colores disponibles: verde, violeta, naranja"
+    ],
+    "image": "https://decathlon.com.ar/cdn/shop/files/pic_e9b89ab0-0c1b-4fe3-8fea-bba62ad0a6b6.jpg?v=1773123929&width=1100",
+    "whatsappText": "Hola! Me interesa el Mat de Yoga Infantil. ¿Me podés informar disponibilidad de colores y envío?"
+  },
+  {
+    "slug": "botella-acero-inoxidable",
+    "name": "Botella Ananda",
+    "category": "Accesorios",
+    "price": 11000,
+    "description": "Botella de acero inoxidable con doble pared al vacío. Mantiene tus bebidas frías hasta 24 horas y calientes hasta 12. Con el logo de Ananda Zen grabado.",
+    "details": [
+      "Capacidad: 500 ml",
+      "Material: acero inoxidable 18/8",
+      "Sin BPA",
+      "Tapa con sello hermético",
+      "Color: verde mate"
+    ],
+    "image": "https://http2.mlstatic.com/D_Q_NP_759727-CBT110786017731_042026-O.webp",
+    "whatsappText": "Hola! Me interesa la Botella Ananda. ¿Tenés stock disponible y hacen envíos?"
+  },
+  {
+    "slug": "kit-inicio-yoga",
+    "name": "Kit Inicio Yoga",
+    "category": "Equipamiento",
+    "price": 22000,
+    "description": "Todo lo que necesitás para empezar la práctica de yoga. Kit pensado especialmente para los nuevos alumnos de Ananda Zen, con materiales de primera calidad.",
+    "details": [
+      "Incluye: mat infantil + bolsa de transporte + taza zen",
+      "Descuento especial combinado",
+      "Ideal como regalo",
+      "Presentación en caja con moño"
+    ],
+    "image": "https://http2.mlstatic.com/D_NQ_NP_673956-CBT95477329311_102025-O.webp",
+    "whatsappText": "Hola! Me interesa el Kit Inicio Yoga. ¿Me podés dar más información sobre disponibilidad?"
+  },
+  {
+    "slug": "libreta-mindfulness",
+    "name": "Libreta Mindfulness",
+    "category": "Papelería",
+    "price": 3500,
+    "description": "Libreta de tapa dura con hojas de papel reciclado para registrar tu práctica, emociones y aprendizajes. Con frases inspiradoras de Ananda Zen en cada página.",
+    "details": [
+      "80 hojas de papel reciclado",
+      "Tapa dura con diseño floral",
+      "Tamaño A5 (15 x 21 cm)",
+      "Incluye marcapáginas de tela"
+    ],
+    "image": "https://i.etsystatic.com/49614838/c/1694/1694/152/152/il/2e1204/6582221557/il_340x270.6582221557_9qj1.jpg",
+    "whatsappText": "Hola! Me interesa la Libreta Mindfulness. ¿Tienen stock disponible?"
+  }
+]

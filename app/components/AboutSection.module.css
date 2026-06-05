@@ -1,0 +1,163 @@
+/* About section block */
+.about {
+  padding: 6rem 2rem;
+  background: hsl(var(--background));
+}
+
+/* About container element */
+.about__container {
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto 4rem;
+}
+
+/* About badge element */
+.about__badge {
+  font-size: 0.875rem;
+  font-weight: 600;
+  font-family: var(--font-body);
+  color: hsl(var(--zen-deep));
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+/* About title element */
+.about__title {
+  font-size: 3rem;
+  font-family: var(--font-display);
+  color: hsl(var(--foreground));
+  font-weight: 800;
+  line-height: 1.1;
+  margin: 0;
+  margin-bottom: 1.5rem;
+}
+
+/* About description element */
+.about__description {
+  font-size: 1.125rem;
+  font-family: var(--font-body);
+  color: hsl(var(--muted-foreground));
+  line-height: 1.625;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+}
+
+/* About features container element */
+.about__features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+/* About feature card element */
+.about__feature {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  background: hsl(var(--card));
+  border: 1px solid hsl(var(--border));
+  border-radius: 1rem;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.about__feature:hover {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  transform: translateY(-4px);
+}
+
+.about__featureIcon {
+  margin-bottom: 1rem;
+  width: 48px;
+  height: 48px;
+  align-self: center;
+  color: hsl(var(--zen-deep));
+}
+
+/* About feature title element */
+.about__featureTitle {
+  font-size: 1.5rem;
+  font-family: var(--font-display);
+  color: hsl(var(--foreground));
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+/* About feature description element */
+.about__featureDescription {
+  font-size: 1rem;
+  font-family: var(--font-body);
+  color: hsl(var(--muted-foreground));
+  line-height: 1.625;
+  margin: 0;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+  .about__title {
+    font-size: 2.5rem;
+  }
+
+  .about__features {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: 4rem 1rem;
+  }
+
+  .about__title {
+    font-size: 2rem;
+  }
+
+  .about__description {
+    font-size: 1rem;
+  }
+
+  .about__features {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .about__feature {
+    padding: 1.5rem;
+  }
+
+  .about__featureTitle {
+    font-size: 1.25rem;
+  }
+
+  .about__featureDescription {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about {
+    padding: 3rem 1rem;
+  }
+
+  .about__title {
+    font-size: 1.75rem;
+  }
+
+  .about__description {
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+  }
+
+  .about__feature {
+    padding: 1.25rem;
+  }
+
+  .about__featureTitle {
+    font-size: 1.125rem;
+  }
+}
