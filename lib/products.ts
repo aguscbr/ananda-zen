@@ -11,7 +11,7 @@ export type Product = {
   whatsappText: string;
 };
 
-export const WHATSAPP_NUMBER = "5491112345678";
+export const WHATSAPP_NUMBER = "5491137861222";
 
 export function getProducts(): Product[] {
   return productsData as Product[];

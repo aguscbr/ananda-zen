@@ -25,6 +25,7 @@
 /* Navbar list element */
 .navbar__list {
   display: flex;
+  align-items: center;
   list-style: none;
   gap: 2rem;
 }
